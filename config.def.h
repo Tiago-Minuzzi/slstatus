@@ -65,7 +65,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ cpu_perc, "  %2s%% | ",     NULL },
+	{ run_command, " %s | ",     "/home/tiago/.local/bin/weather.sh" },
+	{ cpu_perc, " %2s%% | ",     NULL },
 	{ ram_perc, " %2s%% | ",     NULL },
 	{ swap_perc, " %2s%% | ",     NULL },
 	{ disk_perc, " %2s%% | ",     "/" },
