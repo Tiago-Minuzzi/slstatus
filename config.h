@@ -65,7 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, " %s | ",     "curl 'wttr.in?format=1'" },
+	{ run_command, " %s | ",     "cat /tmp/currWeather.txt" },
 	{ cpu_perc, " %2s%% | ",     NULL },
 	{ ram_perc, " %2s%% | ",     NULL },
 	{ swap_perc, " %2s%% | ",     NULL },
