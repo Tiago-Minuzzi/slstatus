@@ -70,6 +70,7 @@ static const struct arg args[] = {
 	{ ram_perc,     " %2s%% | ",     NULL },
 	{ swap_perc,    " %2s%% | ",     NULL },
 	{ disk_perc,    " %2s%% | ",     "/" },
+    { run_command,  " %2s | ",       "~/.local/bin/getVol"},
 	{ datetime,     "%s",             " %a %e, %b | " },
 	{ datetime,     "%s",             " %H:%M " },
 };
