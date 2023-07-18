@@ -73,6 +73,6 @@ static const struct arg args[] = {
     { run_command, " %s | ", "~/.local/bin/getVol"},
     { battery_perc, " %2s%% | ", "BAT1" },
     { run_command, "☀ %s | ", "~/.local/bin/getBright"},
-	{ datetime, "%s",           " %a %e, %b | " },
+	{ datetime, "%s",           " %a, %e %b | " },
 	{ datetime, "%s",           " %H:%M " },
 };
