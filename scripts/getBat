@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+STAT=$(cat /sys/class/power_supply/BAT1/status)
+POWR=$(cat /sys/class/power_supply/BAT1/capacity)
+
+if [ $STAT == "Discharging" ];then
+    echo "$POWR% ↓"
+    if [ $POWR -le 5 ];then
+        dunstify -u critical "Low Battery" "Battery level is at ${POWR}%."
+    fi
+elif [ $STAT == "Charging"];then
+    echo "$POWR% ↑"
+else
+    echo "$POWR%"
+fi
