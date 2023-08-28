@@ -72,8 +72,8 @@ static const struct arg args[] = {
 	{ disk_perc, " %2s%% | ",     "/" },
     { run_command, " %s | ", "~/.local/bin/getVol"},
 //    { battery_perc, " %2s%% | ", "BAT1" },
-    { run_command, " %s | ", "~/.local/bin/getBat"},
     { run_command, "☀ %s | ", "~/.local/bin/getBright"},
+    { run_command, " %s | ", "~/.local/bin/getBat"},
 	{ datetime, "%s",           " %a, %e %b | " },
 	{ datetime, "%s",           " %H:%M " },
 };
