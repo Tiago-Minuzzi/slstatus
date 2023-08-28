@@ -8,7 +8,7 @@ if [ $STAT == "Discharging" ];then
     if [ $POWR -le 5 ];then
         dunstify -u critical "Low Battery" "Battery level is at ${POWR}%."
     fi
-elif [ $STAT == "Charging"];then
+elif [ $STAT == "Charging" ];then
     echo "$POWR% ↑"
 else
     echo "$POWR%"
